@@ -1,0 +1,98 @@
+form {
+    width: 100% !important;
+    max-width: 750px !important;
+    margin: 40px 0;
+    padding: 35px 35px !important;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 2px rgba(204, 204, 204, 0.692);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    /* background: #8e9eab; */
+    background-color: var(--gray-700);
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #394042, #3d424696); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+form .titleBox {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+form div h2 {
+    letter-spacing: 2px;
+    border-radius: 6px;
+    padding: 0px 0 0px 2px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+form div h2 span {
+    border-radius: 0 6px 6px 0;
+    padding: 1px 2px;
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    -ms-border-radius: 0 6px 6px 0;
+    -o-border-radius: 0 6px 6px 0;
+    margin-left: 5px;
+}
+
+form .inputBox {
+    margin: 0 0 0px;
+    height: 100px;
+    font-weight: 600;
+}
+
+form .inputBox input {
+    background-color: transparent !important;
+    border-radius: none !important;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+    box-shadow: none !important;
+    outline: none !important;
+    color: #c4c4c4 !important;
+    font-size: 14px;
+    -webkit-border-radius: none !important;
+    -moz-border-radius: none !important;
+    -ms-border-radius: none !important;
+    -o-border-radius: none !important;
+}
+
+form .inputBox input:focus {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.651) !important;
+    background-color: transparent !important;
+}
+
+form label {
+    /* color: rgb(228, 228, 228); */
+    color: var(--bs-yellow);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1.1px;
+    margin-bottom: 10px;
+}
+
+form .inputBox div {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form .inputBox div span {
+    margin: 0;
+}
+
+@media (max-width:767px) {
+    form div:last-child button{
+        width: 100% !important;
+    }
+}

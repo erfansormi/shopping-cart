@@ -1,0 +1,91 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+:root {
+	--gray-700: #495057;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.swiper-pagination-bullet {
+	width: 14px !important;
+	height: 14px !important;
+}
+
+.swiper-pagination-bullet-active-next, .swiper-pagination-bullet-active-prev {
+	transform: scale(0.75) !important;
+	-webkit-transform: scale(0.75) !important;
+	-moz-transform: scale(0.75) !important;
+	-ms-transform: scale(0.75) !important;
+	-o-transform: scale(0.75) !important;
+}
+
+.swiper-pagination-bullet-active-next-next,
+.swiper-pagination-bullet-active-prev-prev {
+	transform: scale(0.55) !important;
+	-webkit-transform: scale(0.55) !important;
+	-moz-transform: scale(0.55) !important;
+	-ms-transform: scale(0.55) !important;
+	-o-transform: scale(0.55) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	padding: 0 20px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	font-weight: 900 !important;
+	font-size: 60px !important;
+	background-color: rgba(255, 255, 255, 0.623) !important;
+	border: 1px solid rgba(0, 0, 0, 0.336);
+	padding: 1.2rem;
+	color: #000 !important;
+}
+

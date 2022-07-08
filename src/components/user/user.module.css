@@ -1,0 +1,116 @@
+.user_info_container {
+    margin-top: 7rem !important;
+    flex-direction: row-reverse;
+    margin-bottom: 4rem;
+}
+
+@media (max-width:767px) {
+    .user_info_container {
+        flex-direction: column-reverse;
+    }
+}
+
+.left_user_details {
+    border: 1px solid #cececc;
+    height: 100%;
+    padding: 0px;
+}
+
+.sideList {
+    border: 1px solid #cececc;
+    padding: 0px !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column !important;
+}
+
+.sideList ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.sideList ul div:hover {
+    background-color: #ececec;
+}
+
+.sideList ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.sideList ul li span {
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.sideList ul li i {
+    font-size: 25px;
+    color: #000 !important;
+}
+
+.favorite_container {
+    height: 100%;
+}
+
+.favorite_box {
+    border: 1px solid #ececec;
+}
+
+.favorite_box:hover {
+    box-shadow: 0 0 5px 2px #ccc;
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -ms-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+
+.active {
+    border-right: red 4px solid;
+}
+
+.user_info_box {
+    min-height: 170px;
+    height: 100%;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(221, 255, 244);
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user_info_box div {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.user_info_box img {
+    width: 50px;
+    margin: 0px 0;
+}
+
+
+.user_info_box div h5 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.user_info_box div span {
+    font-weight: 600;
+}

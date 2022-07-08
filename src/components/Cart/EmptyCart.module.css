@@ -1,0 +1,10 @@
+.emptyBox{
+    padding: 25px;
+    box-shadow: 0 0 5px 2px #ccc;
+    border-radius: 8px;
+    margin: 0 0 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

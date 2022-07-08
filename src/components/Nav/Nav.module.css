@@ -1,0 +1,220 @@
+nav {
+    align-items: center;
+    padding: 10px 0 !important;
+    min-height: 80px;
+    margin: 0 0 25px !important;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
+nav .leftMenu {
+    display: flex;
+    padding: 10px 0 10px 15px;
+    align-items: center;
+}
+
+nav .leftMenu ul {
+    display: flex;
+    padding: 0;
+    margin: 0 !important;
+}
+
+nav .leftMenu ul li {
+    margin-right: 13px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav .leftMenu ul li a {
+    text-decoration: none;
+    padding: 4px;
+    transition: 0.2s all ease-in;
+    -webkit-transition: 0.2s all ease-in;
+    -moz-transition: 0.2s all ease-in;
+    -ms-transition: 0.2s all ease-in;
+    -o-transition: 0.2s all ease-in;
+}
+
+nav .leftMenu ul .nav_link_active {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    color: #333 !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+nav .rightMenu {
+    display: flex;
+    align-items: center;
+}
+
+nav .rightMenu ul {
+    margin: 0 30px 0 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+nav .rightMenu ul li {
+    margin: 0 0 0 5px;
+    height: 40px;
+    display: flex;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .rightMenu ul li a {
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .leftMenu ul li a:hover {
+    box-shadow: inset 0 0 0 2px #fff;
+    /* border: 1px solid #fff; */
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+nav .rightMenu ul .nav_icon_link_active {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    color: #333 !important;
+    border-radius: 4px;
+    padding: 0px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+nav .rightMenu ul li a span {
+    position: absolute;
+    font-size: 13px;
+    width: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/*styles in sm */
+.sm_nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    height: 100%;
+}
+
+.sm_nav div li {
+    margin: 0 0 0 5px;
+    height: 45px;
+    display: flex;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sm_nav div li a {
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sm_nav div li .nav_icon_link_active {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    color: #333 !important;
+    border-radius: 4px;
+    padding: 4px 2px;
+    width: 100%;
+}
+
+.sm_nav div li a i {
+    font-size: 35px !important;
+}
+
+.sm_nav div li a span {
+    position: absolute;
+    font-size: 13px;
+    width: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.menu_nav {
+    width: 60% !important;
+    min-width: 200px !important;
+}
+
+.menu_nav div ul li {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu_nav div ul li a {
+    text-decoration: none;
+    padding: 4px;
+    transition: 0.2s all ease-in;
+    -webkit-transition: 0.2s all ease-in;
+    -moz-transition: 0.2s all ease-in;
+    -ms-transition: 0.2s all ease-in;
+    -o-transition: 0.2s all ease-in;
+}
+
+.menu_nav div ul li .nav_link_active {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    color: #333 !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}

@@ -1,0 +1,165 @@
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 850px;
+    padding: 30px 30px;
+    box-shadow: 0 0 5px 2px rgba(204, 204, 204, 0.719);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 10px auto;
+}
+
+@media (max-width:767px) {
+    .productContainer {
+        padding: 10px 5px;
+        width: 100%;
+    }
+}
+
+.productContainer .leftProductSection {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+}
+
+@media (max-width:767px) {
+    .productContainer .leftProductSection {
+        /* width: 70%; */
+        min-width: 220px;
+    }
+}
+
+.leftProductSection .imgBox:nth-child(1) {
+    width: 100%;
+    height: 100%;
+}
+
+.productContainer .leftProductSection .imgBox {
+    /*display: block;
+    align-items: center;
+    justify-content: center;
+    max-height: 260px; */
+    border: 1px solid rgba(204, 204, 204, 0.712);
+    border-radius: 8px;
+}
+
+@media (max-width:767px) {
+    .productContainer .leftProductSection .imgBox {
+        height: 220px;
+    }
+}
+
+.productContainer .leftProductSection .imgBox>img {
+    /* width: auto;
+    max-width: 80%;
+    margin: 0 auto;
+    height: auto;
+    min-height: 250px !important;
+    max-height: 270px !important; */
+    width: auto !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    pointer-events: none;
+    min-height: 210px !important;
+    max-height: 250px !important;
+    margin: 0 auto;
+}
+
+.productContainer .categoryBox {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.rightProductSection {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+@media (max-width:767px) {
+    .rightProductSection {
+        width: 100%;
+        align-items: center;
+        padding: 0 10px;
+    }
+}
+
+.textBox {
+    width: 100%;
+}
+
+.textBox div p {
+    height: 100%;
+    max-height: 240px;
+    overflow: hidden;
+}
+
+.btnBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+.btnBox .btnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+
+.btnBox .btnDiv div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+.btnBox .btnDiv button {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    width: 45px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -ms-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+
+.btnBox .btnDiv button:hover {
+    background-color: #0d45fd !important;
+}
+
+.btnBox .priceBox {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.btnBox .priceBox span::before {
+    content: "$";
+}

@@ -1,0 +1,75 @@
+.favoriteList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 20px 10px;
+    height: 100%;
+}
+
+.favoriteList .imgBox {
+    margin-bottom: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.favoriteList .imgBox img {
+    min-width: 80px;
+    max-height: 120px;
+    max-width: 100px;
+}
+
+@media (max-width:767px) {
+    .favoriteList .imgBox img {
+        min-width: 50px;
+        max-height: 90px;
+        max-width: 100px;
+    }
+}
+
+.info_product{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.favoriteList div h5 {
+    font-size: 14px;
+    height: 35px;
+    overflow: hidden;
+}
+
+.favoriteList .detailsBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.detailsBox button {
+    height: 32px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailsBox div{
+    display: flex;
+}
+
+.detailsBox div button{
+    background-color: transparent;
+    height: 32px;
+    padding: 0px 5px;
+    min-width: 40px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}

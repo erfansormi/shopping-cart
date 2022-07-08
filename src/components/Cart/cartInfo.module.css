@@ -1,0 +1,29 @@
+.cartBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    box-shadow: 0 0 5px 2px #ccc;
+    border-radius: 8px;
+    /* height: 100%; */
+    align-items: center;
+}
+
+.cartBox .titleBox {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.cartBox .titleBox img {
+    width: 110px;
+    height: 100%;
+}
+
+@media (max-width:767px) {
+    .cartBox{
+        /* width: 65% !important; */
+    }   
+}
