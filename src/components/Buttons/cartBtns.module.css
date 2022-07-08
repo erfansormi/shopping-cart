@@ -1,0 +1,40 @@
+.btnBox {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 !important;
+}
+
+.btnBox span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btnBox button {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    width: 35px;
+    color: #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -ms-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+
+.btnBox button:hover {
+    background-color: #0d45fd !important;
+}
+
+.btnBox button i {
+    font-size: 22px;
+}

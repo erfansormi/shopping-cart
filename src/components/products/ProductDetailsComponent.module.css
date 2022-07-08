@@ -56,12 +56,6 @@
 }
 
 .productContainer .leftProductSection .imgBox>img {
-    /* width: auto;
-    max-width: 80%;
-    margin: 0 auto;
-    height: auto;
-    min-height: 250px !important;
-    max-height: 270px !important; */
     width: auto !important;
     max-width: 100% !important;
     height: 100% !important;
@@ -155,11 +149,8 @@
 }
 
 .btnBox .priceBox {
-    display: flex;
-    justify-content: center;
-    height: 50px;
-}
-
-.btnBox .priceBox span::before {
-    content: "$";
+    display: flex !important;
+    justify-content: center !important;
+    height: 50px !important;
+    font-size: 22px;
 }

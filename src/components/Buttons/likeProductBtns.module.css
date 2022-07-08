@@ -1,0 +1,12 @@
+.favoriteBox {
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    border: 0;
+    background-color: transparent;
+}
+
+.favoriteBox i {
+    font-size: 22px;
+    color: red;
+}

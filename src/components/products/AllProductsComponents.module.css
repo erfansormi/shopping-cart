@@ -16,7 +16,7 @@
     position: relative;
 }
 
-.ProductContainer div {
+.ProductContainer>div {
     text-align: center;
     margin-bottom: 12px;
 }
@@ -31,7 +31,7 @@
     width: 100%;
 }
 
-.ProductContainer div img {
+.ProductContainer>div img {
     min-width: 120px;
     max-height: 150px;
     height: 100%;
@@ -46,82 +46,12 @@
     height: 50px;
 }
 
-.ProductContainer .btnBox div:nth-child(2) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 105px;
-}
-
-.ProductContainer .btnBox div a {
-    text-decoration: none;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    transition: 0.3s all ease-in;
-    padding: 0 5px;
-}
-
-.ProductContainer .btnBox div a:hover {
-    background-color: #0da8f0;
-}
-
-.ProductContainer .btnBox div span {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.ProductContainer .btnBox div button {
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    outline: none;
-    width: 35px;
-    color: #fff;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-    transition: 0.3s all ease-in;
-    -webkit-transition: 0.3s all ease-in;
-    -moz-transition: 0.3s all ease-in;
-    -ms-transition: 0.3s all ease-in;
-    -o-transition: 0.3s all ease-in;
-}
 
 @media (max-width:1000px) {
     .ProductContainer .btnBox div button, .ProductContainer .btnBox div a {
         width: 100%;
         font-size: 14px;
     }
-}
-
-.ProductContainer .btnBox div button:hover {
-    background-color: #0d45fd !important;
-}
-
-.ProductContainer .btnBox div button i {
-    font-size: 20px;
-}
-
-.favoriteBox {
-    position: absolute;
-    top: 1px;
-    right: 2px;
-    border: 0;
-    background-color: transparent;
-}
-
-.favoriteBox i {
-    font-size: 22px;
-    color: red;
 }
 
 @media (max-width:767px) {

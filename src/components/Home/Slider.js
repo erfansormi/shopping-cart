@@ -1,41 +1,45 @@
-import React, { useContext } from 'react'
+import React, { useContext } from "react";
 
 //router
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 //swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
 //context
-import { Products } from "../../Context/ProductsContextProvider"
+import { Products } from "../../Context/ProductsContextProvider";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "../../../node_modules/swiper/swiper-bundle.css"
-import styles from "./Slider.module.css"
+import "../../../node_modules/swiper/swiper-bundle.css";
+import styles from "./Slider.module.css";
 
 //functions
-import { sliderFilter } from '../../functions/functions';
+import { sliderFilter } from "../../functions/functions";
 
 //components
-import SliderCard from './SliderCard';
-import Loading from '../animations/Loading';
+import SliderCard from "./SliderCard";
+import Loading from "../animations/Loading";
 
 //img
-import offerImg from "../../assets/img/offer-img1.svg"
-import chooseProduct from "../../assets/img/choose-product.png"
+import offerImg from "../../assets/img/offer-img1.svg";
+import chooseProduct from "../../assets/img/choose-product.png";
 
 const Slider = () => {
-
-    const products = useContext(Products)
+    const products = useContext(Products);
 
     return (
         <>
             <article>
                 <div className={styles.discountContainer}>
-                    <Swiper style={{ minHeight: "300px", maxWidth: "1800px", padding: "10px 0" }}
+                    <Swiper
+                        style={{
+                            minHeight: "300px",
+                            maxWidth: "1800px",
+                            padding: "10px 0",
+                        }}
                         slidesPerView={1}
                         spaceBetween={10}
                         slidesPerGroup={2}
@@ -54,7 +58,7 @@ const Slider = () => {
                                 spaceBetween: 10,
                             },
                             540: {
-                                slidesPerView: 2.90,
+                                slidesPerView: 2.9,
                                 spaceBetween: 0,
                             },
                             640: {
@@ -116,14 +120,33 @@ const Slider = () => {
                             </div>
                             <div className={styles.btnBox}>
                                 <Link to={"/Products"}>
-                                    <button className='btn btn-warning text-uppercase fw-bold'>see all</button>
+                                    <button className="btn btn-warning text-uppercase fw-bold">
+                                        see all
+                                    </button>
                                 </Link>
                             </div>
                         </SwiperSlide>
-                        {sliderFilter(products).length ? sliderFilter(products).map((item) =>
-                            <SwiperSlide key={item.id}> <SliderCard img={item.image} title={item.title} price={item.price} item={item} id={item.id} /> </SwiperSlide>) : <SwiperSlide style={{ minWidth: "97vw" }}> <Loading /></SwiperSlide>}
+                        {sliderFilter(products).length ? (
+                            sliderFilter(products).map((item) => (
+                                <SwiperSlide key={item.id}>
+                                    {" "}
+                                    <SliderCard
+                                        img={item.image}
+                                        title={item.title}
+                                        price={item.price}
+                                        item={item}
+                                        id={item.id}
+                                    />{" "}
+                                </SwiperSlide>
+                            ))
+                        ) : (
+                            <SwiperSlide style={{ minWidth: "97vw" }}>
+                                {" "}
+                                <Loading />
+                            </SwiperSlide>
+                        )}
                         <SwiperSlide className={styles.seeAll_product_last_slide}>
-                            <Link to="/Products" className='btn btn-light'>
+                            <Link to="/Products" className="btn btn-light">
                                 see all
                                 <i className="bi bi-arrow-right-square-fill"></i>
                             </Link>
@@ -132,7 +155,7 @@ const Slider = () => {
                 </div>
             </article>
         </>
-    )
-}
+    );
+};
 
-export default Slider
+export default Slider;
