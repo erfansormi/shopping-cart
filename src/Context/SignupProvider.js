@@ -155,8 +155,6 @@ const reducer = (state, action) => {
 
 const SignupContaxtProvider = (props) => {
     const [state, dispatch] = useReducer(reducer, initialState)
-    // const [user, setUser] = useState([])
-    // const navigate = useNavigate()
 
     // useEffect(() => {
     //     auth.onAuthStateChanged(user => {
